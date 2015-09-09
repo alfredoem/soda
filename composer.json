@@ -25,8 +25,15 @@
         "scrutinizer/ocular": "~1.1"
     },
     "autoload": {
-        "psr-0": {
-            "Alfredoem\\Soda\\": "src/"
+        "psr-4": {
+            "Alfredoem\\Soda\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alfredoem\\Soda\\": "tests"
         }
     }
+    
+    
 }
