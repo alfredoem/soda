@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Alfredoem\\Soda\\": "src"
+            "Alfredoem\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Alfredoem\\Soda\\": "tests"
+            "Alfredoem\\": "tests"
         }
     }
     
