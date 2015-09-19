@@ -1,4 +1,4 @@
-<?php
+<?php namespace Alfredoem\Soda;
 
 class Soda
 {
