@@ -3,7 +3,7 @@
 
 class Soda
 {
-    public static function Soda()
+    public static function Aloha()
     {
         return 'Soda:: Aloha!!!';
     }
