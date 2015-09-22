@@ -53,19 +53,6 @@ class SodaServiceProvider extends ServiceProvider{
         config([
             'config/contact.php',
         ]);
-
-        if (! defined('SODA_PATH')) {
-           define('SODA_PATH', realpath(__DIR__.'/../../'));
-        }
-
-        if(! class_exists('Soda')) {
-            class_alias('Alfredoem\Soda\Soda', 'Soda');
-        }
-
-        if($this->app->runningInConsole()) {
-            $this->commands([Install::class]);
-        }
-
     }
 
     private function registerContact()
