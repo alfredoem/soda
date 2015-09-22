@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Alfredoem\\Soda\\": "src"
+            "Alfredoem\\Soda\\": "app"
         }
     },
     "autoload-dev": {
