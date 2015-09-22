@@ -8,6 +8,8 @@
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
 
+use Alfredoem\Soda\Console\Install;
+
 class SodaServiceProvider extends ServiceProvider{
 
 
