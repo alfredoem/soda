@@ -29,8 +29,7 @@ class Install extends Command
     protected function installMigrations()
     {
         copy(
-            SODA_PATH . '/resources/stubs/database/migrations/2014_10_12_000000_create_users_table.php',
-            database_path('migrations/2014_10_12_000000_create_users_table.php'));
+            SODA_PATH . '/resources/stubs/database/migrations/2015_22_09_aloha.php', database_path('migrations/2015_22_09_aloha.php'));
 
     }
 
