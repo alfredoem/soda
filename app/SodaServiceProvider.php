@@ -57,7 +57,7 @@ class SodaServiceProvider extends ServiceProvider{
         ]);
 
         if (! defined('SODA_PATH')) {
-           define('SODA_PATH', realpath(__DIR__.'/../../'));
+           define('SODA_PATH', realpath(__DIR__.'/../'));
         }
 
         if(! class_exists('Soda')) {
