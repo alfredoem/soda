@@ -18,6 +18,16 @@ class SodaServiceProvider extends ServiceProvider{
      */
     protected $defer = false;
 
+
+    /*public function boot()
+    {
+        $this->app->booted(function () {
+            $this->defineRoutes();
+        });
+
+        $this->defineResources();
+    }*/
+
     public function boot()
     {
 
