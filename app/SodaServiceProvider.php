@@ -48,13 +48,11 @@ class SodaServiceProvider extends ServiceProvider{
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 SODA_PATH.'/resources/views' => base_path('resources/views/vendor/soda'),
-            ], 'soda-full');
+            ]);
 
             $this->publishes([
-                SODA_PATH.'/resources/views/contact.blade.php' => base_path('resources/views/vendor/contact.blade.php'),
-                SODA_PATH.'/resources/views/template.blade.php' => base_path('resources/views/vendor/template.blade.php'),
-
-            ], 'soda-basics');
+                SODA_PATH.'/resources/views' => base_path('resources/views/vendor/soda'),
+            ]);
         }
     }
 
