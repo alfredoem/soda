@@ -33,6 +33,9 @@
         "psr-4": {
             "Alfredoem\\Soda\\": "tests"
         }
+    },
+    "config": {
+        "preferred-install": "dist"
     }
 
 
