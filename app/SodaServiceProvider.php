@@ -27,7 +27,6 @@ class SodaServiceProvider extends ServiceProvider{
         });
 
         $this->defineResources();
-
     }
 
     protected function defineRoutes()
@@ -48,14 +47,12 @@ class SodaServiceProvider extends ServiceProvider{
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                SODA_PATH.'/resources/views' => base_path('resources/views'),
+                SODA_PATH.'/resources/views' => base_path('resources/views/vendor/soda'),
             ], 'soda-full');
 
             $this->publishes([
-                SODA_PATH.'/resources/views/contact' => base_path('resources/views/contact'),
-                SODA_PATH.'/resources/views/contact.blade.php' => base_path('resources/views/contact.blade.php'),
-                SODA_PATH.'/resources/views/template' => base_path('resources/views/template'),
-                SODA_PATH.'/resources/views/template.blade.php' => base_path('resources/views/template.blade.php'),
+                SODA_PATH.'/resources/views/contact.blade.php' => base_path('resources/views/vendor/contact.blade.php'),
+                SODA_PATH.'/resources/views/template.blade.php' => base_path('resources/views/vendor/template.blade.php'),
 
             ], 'soda-basics');
         }
@@ -65,12 +62,13 @@ class SodaServiceProvider extends ServiceProvider{
     public function register()
     {
         $this->registerContact();
+
         config([
             'config/contact.php',
         ]);
 
         if (! defined('SODA_PATH')) {
-           define('SODA_PATH', realpath(__DIR__.'/../'));
+            define('SODA_PATH', realpath(__DIR__.'/../'));
         }
 
         if(! class_exists('Soda')) {

@@ -1,4 +1,4 @@
-@extends('contact::template')
+@extends('soda::template')
 
 
 @section('content')
