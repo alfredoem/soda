@@ -1,8 +1,8 @@
 @extends('soda::template')
 
-
 @section('content')
 
-    <h2>Soda!!</h2>
+    <?php $noice = Soda::aloha() ?>
+    <h2>{{$noice}}</h2>
 
 @stop
