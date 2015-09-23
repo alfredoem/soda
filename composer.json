@@ -34,9 +34,7 @@
             "Alfredoem\\Soda\\": "tests"
         }
     },
-    "config": {
-        "preferred-install": "dist"
-    }
+    "minimum-stability": "dev"
 
 
 }
