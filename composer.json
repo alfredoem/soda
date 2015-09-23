@@ -33,8 +33,7 @@
         "psr-4": {
             "Alfredoem\\Soda\\": "tests"
         }
-    },
-    "minimum-stability": "dev"
+    }
 
 
 }
